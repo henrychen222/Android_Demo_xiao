@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/re_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#33CCFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="探索"
+            android:textColor="#FCFCFC"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/re_title">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1.0"
+                    android:src="@mipmap/app_hongbao_small" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1.0"
+                    android:src="@mipmap/app_payee" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1.0"
+                    android:padding="3dp"
+                    android:src="@mipmap/app_travelabroad" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1.0"
+                    android:src="@mipmap/app_tmall" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center_horizontal"
+                    android:text="红包" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center_horizontal"
+                    android:text="电子券" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center_horizontal"
+                    android:text="行程单" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center_horizontal"
+                    android:text="会员卡" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewxian"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/head"
+        android:background="#E6E6FA" />
+
+    <View
+        android:id="@+id/viewkong"
+        android:layout_width="fill_parent"
+        android:layout_height="15dp"
+        android:layout_below="@+id/viewxian"
+        android:background="#E6E6FA" />
+
+    <View
+        android:id="@+id/viewxian1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/viewkong"
+        android:background="#E6E6FA" />
+
+    <RelativeLayout
+        android:id="@+id/liebiao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewkong">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/viewxian2"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#E6E6FA" />
+
+            <RelativeLayout
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/re_imag"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/app_movie" />
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/re_imag"
+                    android:text="淘宝电影"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/yuandian"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/username"
+                    android:src="@mipmap/qq_aio_plugin_red_point" />
+
+                <TextView
+                    android:id="@+id/hui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/yuandian"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="2dp"
+                    android:text="惠"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/wenzi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/hui"
+                    android:paddingLeft="30dp"
+                    android:text="18.8元起看大片"
+                    android:textColor="#B0C4DE"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/card_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/viewxian3"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#E6E6FA" />
+
+            <RelativeLayout
+                android:id="@+id/user1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/re_imag2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/app_appcenter" />
+
+                <TextView
+                    android:id="@+id/username123"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/re_imag2"
+                    android:text="快抢"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/xx12333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/username123"
+                    android:paddingLeft="95dp"
+                    android:text="吃货折扣券疯抢"
+                    android:textColor="#B0C4DE"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/card_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/viewxian44"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#E6E6FA" />
+
+            <RelativeLayout
+                android:id="@+id/user22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/re_imag33"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/app_taxi" />
+
+                <TextView
+                    android:id="@+id/username33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/re_imag33"
+                    android:text="快的打车"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/card_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/viewkong1"
+                android:layout_width="fill_parent"
+                android:layout_height="15dp"
+                android:layout_below="@+id/viewxian"
+                android:background="#E6E6FA" />
+
+            <View
+                android:id="@+id/viewxian4"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#E6E6FA" />
+
+            <RelativeLayout
+                android:id="@+id/user2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/re_imag3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/app_freewifi" />
+
+                <TextView
+                    android:id="@+id/username3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/re_imag3"
+                    android:text="我的朋友"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/card_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/viewxian5"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#E6E6FA" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_buttom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/hongbao"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1.0"
+                        android:padding="0dp"
+                        android:src="@mipmap/ico_user4" />
+
+                    <ImageView
+                        android:id="@+id/dianziquan"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1.0"
+                        android:padding="5dp"
+                        android:src="@mipmap/ico_fujin1" />
+
+                    <ImageView
+                        android:id="@+id/xingchengdan"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1.0"
+                        android:padding="5dp"
+                        android:src="@mipmap/ico_fujin3" />
+
+                    <ImageView
+                        android:id="@+id/huiyuan"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1.0"
+                        android:padding="0dp"
+                        android:src="@mipmap/ico_zhuce3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_horizontal"
+                        android:text="红包" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_horizontal"
+                        android:text="电子券" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_horizontal"
+                        android:text="行程单" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_horizontal"
+                        android:text="会员卡" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/hui2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="132dp"
+                android:paddingTop="5dp"
+                android:text="3"
+                android:textColor="#ffffff"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/hui3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="206dp"
+                android:paddingTop="5dp"
+                android:text="惠"
+                android:textColor="#ffffff"
+                android:textSize="10dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
